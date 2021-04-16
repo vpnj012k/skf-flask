@@ -21,7 +21,7 @@ RUN npm --loglevel=error install &&\
 ############
 
 # base image
-FROM nginx:1.14.1-alpine as run
+FROM nginx:1.19-alpine as run
 
 
 ## Remove default nginx website
