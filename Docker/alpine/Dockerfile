@@ -3,7 +3,7 @@
 #############
 
 # base image
-FROM python:3.7 as BUILDER
+FROM python:3.13.0b2 as BUILDER
 
 LABEL maintainer="glenn.ten.cate@owasp.org"
 
@@ -16,7 +16,7 @@ RUN apt update &&\
 ############
 
 # base image
-FROM python:3.7
+FROM python:3.13.0b2
 
 LABEL maintainer="glenn.ten.cate@owasp.org"
 
