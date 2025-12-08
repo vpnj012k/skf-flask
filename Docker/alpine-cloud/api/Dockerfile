@@ -1,4 +1,4 @@
-FROM python:3.7 as BUILDER
+FROM python:3.14.1 as BUILDER
 
 LABEL maintainer="glenn.ten.cate@owasp.org"
 
@@ -6,7 +6,7 @@ RUN apt update &&\
     apt install -y apt-utils python3-nltk \
     default-libmysqlclient-dev
 
-FROM python:3.7
+FROM python:3.14.1
 # second stage
 LABEL maintainer="glenn.ten.cate@owasp.org"
 
